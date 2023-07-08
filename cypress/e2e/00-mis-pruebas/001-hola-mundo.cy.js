@@ -1,4 +1,6 @@
 
+//c:\Users\Mauricio Bessón\OneDrive\Documents\Programación\Cypress.io\001-test-cypress
+// https://github.com/mauribesson/Cypress-101-Practicas.git
 
 describe('Practica de Cypress Automation 101', () => {
 
