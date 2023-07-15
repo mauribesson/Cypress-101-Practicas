@@ -3,11 +3,10 @@
 // https://github.com/mauribesson/Cypress-101-Practicas.git
 
 describe('Practica de Cypress Automation 101', () => {
-
-   /* beforeEach(() => {
+    beforeEach(() => {
         //cy.visit('https://demoqa.com/')
         cy.visit('https://demoqa.com/automation-practice-form')
-    })*/
+    })
 
     /*it('TC001_Acceso', () => {
         let app = cy.get('#app').should()
@@ -16,20 +15,15 @@ describe('Practica de Cypress Automation 101', () => {
     })*/
 
     it('Accesos a formulario', () => {
-      cy.visit('https://demoqa.com/automation-practice-form')
-      cy.get('h5').should('have.text', 'Student Registration Form')
-      
+      cy.get('h5').should('have.text', 'Student Registration Form')      
     })
 
-    it('Priemer nombre', () => {
-      cy.visit('https://demoqa.com/automation-practice-form')
-      
-      let inputFirstName = cy.get('#firstName')
+    it('Nombre', () => {
+    //Setear priem er nombre
+      cy.get('#firstName').type("Santiago")
+    })
 
-      cy.get('#firstName').type("SOY UN NOMBNRE")
-      console.log('atributo', inputFirstName)
-      /*let firstName = 'Text'
-      cy.get('#firstName').type(firstName)
-      */
+    it('Apellido', () => {
+      cy.get('#lastName').type("Lopez")
     })
 })
