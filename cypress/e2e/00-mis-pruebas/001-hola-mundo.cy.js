@@ -14,16 +14,24 @@ describe('Practica de Cypress Automation 101', () => {
         cy.get('header > a > img')
     })*/
 
-    it('Accesos a formulario', () => {
+    it('TC 001 - Accesos a formulario', () => {
       cy.get('h5').should('have.text', 'Student Registration Form')      
     })
 
-    it('Nombre', () => {
+    it('TC 002 - Ingresar Nombre', () => {
     //Setear priem er nombre
       cy.get('#firstName').type("Santiago")
     })
 
-    it('Apellido', () => {
-      cy.get('#lastName').type("Lopez")
+    it('TC 003 - Ingresar Apellido', () => {
+      cy.get('#lastName').type("López")
+    })
+
+    it('TC 004 - Ingresar email', () => {
+      cy.get('#userEmail').type("santiago.lopez.test@mail-test.com")     
+    })
+
+    it('TC 005 - Seleccionar Sexo Masculino', () => {
+      cy.get('#genterWrapper > .col-md-9 > :nth-child(1)').click()
     })
 })
