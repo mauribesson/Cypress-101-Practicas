@@ -1,2 +1,2 @@
 # Cypress-101-Practicas
-Repositorio de practica de Cypress https://www.cypress.io/
+Repositorio de practica de Cypress.io https://www.cypress.io/
